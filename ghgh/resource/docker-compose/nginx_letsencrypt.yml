@@ -1,0 +1,42 @@
+version: "3"
+
+volumes:
+  nginx-config:
+  nginx-certs:
+  nginx-vhosts:
+  nginx-webroot:
+
+networks:
+  ghost-network:
+    driver: bridge
+
+services:
+
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - nginx-config:/etc/nginx/conf.d
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhosts:/etc/nginx/vhost.d
+      - nginx-webroot:/usr/share/nginx/html
+    networks:
+      - ghost-network
+
+  letsencrypt-nginx-proxy-companion:
+    image: jrcs/letsencrypt-nginx-proxy-companion
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - nginx-config:/etc/nginx/conf.d
+      - nginx-certs:/etc/nginx/certs
+      - nginx-vhosts:/etc/nginx/vhost.d
+      - nginx-webroot:/usr/share/nginx/html
+    networks:
+      - ghost-network
+    environment:
+      ACME_CA_URI: "${LETSENCRYPT_ACME_CA_URI}"
+      NGINX_PROXY_CONTAINER: nginx-proxy

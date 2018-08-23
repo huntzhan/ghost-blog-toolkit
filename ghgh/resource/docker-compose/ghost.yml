@@ -1,0 +1,41 @@
+version: "3"
+
+volumes:
+  mysql-data:
+
+networks:
+  ghost-network:
+    driver: bridge
+
+services:
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "${GHOST_MYSQL_PASSWORD}"
+    restart: always
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - ghost-network
+
+  web:
+    image: ghost
+    restart: always
+    networks:
+      - ghost-network
+    environment:
+      # trigger the registration event.
+      # https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion
+      VIRTUAL_HOST: "${GHOST_URL},www.${GHOST_URL}"
+      LETSENCRYPT_HOST: "${GHOST_URL},www.${GHOST_URL}"
+      LETSENCRYPT_EMAIL: "${LETSENCRYPT_EMAIL}"
+
+      # ghost config.
+      # https://docs.ghost.org/docs/config#section-running-ghost-with-config-env-variables
+      url: "https://${GHOST_URL}"
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: "${GHOST_MYSQL_PASSWORD}"
+      database__connection__database: ghost
