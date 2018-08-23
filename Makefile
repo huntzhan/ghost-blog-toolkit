@@ -51,7 +51,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 ghost_blog_toolkit tests
+	flake8 ghgh tests
 
 test: ## run tests quickly with the default Python
 	py.test
@@ -60,15 +60,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source ghost_blog_toolkit -m pytest
+	coverage run --source ghgh -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/ghost_blog_toolkit.rst
+	rm -f docs/ghgh.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ ghost_blog_toolkit
+	sphinx-apidoc -o docs/ ghgh
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

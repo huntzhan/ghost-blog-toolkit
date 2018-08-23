@@ -1,4 +1,4 @@
-* ghost-blog-toolkit version:
+* ghgh version:
 * Python version:
 * Operating System:
 

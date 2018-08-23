@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use ghost-blog-toolkit in a project::
+To use ghgh in a project::
 
-    import ghost_blog_toolkit
+    import ghgh

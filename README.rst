@@ -1,16 +1,16 @@
-==================
-ghost-blog-toolkit
-==================
+====
+ghgh
+====
 
 
-.. image:: https://img.shields.io/pypi/v/ghost_blog_toolkit.svg
-        :target: https://pypi.python.org/pypi/ghost_blog_toolkit
+.. image:: https://img.shields.io/pypi/v/ghgh.svg
+        :target: https://pypi.python.org/pypi/ghgh
 
-.. image:: https://img.shields.io/travis/huntzhan/ghost_blog_toolkit.svg
-        :target: https://travis-ci.org/huntzhan/ghost_blog_toolkit
+.. image:: https://img.shields.io/travis/huntzhan/ghgh.svg
+        :target: https://travis-ci.org/huntzhan/ghgh
 
-.. image:: https://readthedocs.org/projects/ghost-blog-toolkit/badge/?version=latest
-        :target: https://ghost-blog-toolkit.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/ghgh/badge/?version=latest
+        :target: https://ghgh.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ None
 
 
 * Free software: MIT license
-* Documentation: https://ghost-blog-toolkit.readthedocs.io.
+* Documentation: https://ghgh.readthedocs.io.
 
 
 Features

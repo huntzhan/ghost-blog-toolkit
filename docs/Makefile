@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = ghost_blog_toolkit
+SPHINXPROJ    = ghgh
 SOURCEDIR     = .
 BUILDDIR      = _build
 

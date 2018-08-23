@@ -1,4 +1,4 @@
-Welcome to ghost-blog-toolkit's documentation!
+Welcome to ghgh's documentation!
 ======================================
 
 .. toctree::

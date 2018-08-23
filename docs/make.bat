@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=ghost_blog_toolkit
+set SPHINXPROJ=ghgh
 
 if "%1" == "" goto help
 

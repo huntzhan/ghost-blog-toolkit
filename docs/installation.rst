@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install ghost-blog-toolkit, run this command in your terminal:
+To install ghgh, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install ghost_blog_toolkit
+    $ pip install ghgh
 
-This is the preferred method to install ghost-blog-toolkit, as it will always install the most recent stable release.
+This is the preferred method to install ghgh, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for ghost-blog-toolkit can be downloaded from the `Github repo`_.
+The sources for ghgh can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/huntzhan/ghost_blog_toolkit
+    $ git clone git://github.com/huntzhan/ghgh
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/huntzhan/ghost_blog_toolkit/tarball/master
+    $ curl  -OL https://github.com/huntzhan/ghgh/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/huntzhan/ghost_blog_toolkit
-.. _tarball: https://github.com/huntzhan/ghost_blog_toolkit/tarball/master
+.. _Github repo: https://github.com/huntzhan/ghgh
+.. _tarball: https://github.com/huntzhan/ghgh/tarball/master
