@@ -1,0 +1,8 @@
+# .env file for docker-compose.yml.
+
+# Uncomment this line for testing.
+# LETSENCRYPT_ACME_CA_URI=https://acme-staging.api.letsencrypt.org/directory
+LETSENCRYPT_EMAIL=<email>
+
+GHOST_URL=<domain name>
+GHOST_MYSQL_PASSWORD=<mysql root password>
