@@ -19,7 +19,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: huntzhan
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: J8t7+e8dk7xApfGpTDwRyH0ENGoM2tPsOXzv0f11Hc5t5GwMUr+fef/Yp34IwuPwc2hbVJH9VAD4FedI4NLy1/rpib2jsyG6xD4GeRztqw6pZfbCREaMv6fm+yuHm6rJoxJdY6RB4kAmnEkZ2mlKVSLmXJAonrKt03XageGIdj1H53JAJTftN41ot6LAkw+8hoQkoYuUPVcJBxVoqhrpH912Te3gJNTSystY7yKiAbZid+lYSvqpoBZgAlgj01S8mFkIsMU+UTfNgjkpUQGs5sHFWVkqi9J4pb0wVzuYSdF31LoEwIMy4v22a+F49hrPKa0zCOT2rRsRrEuG3omm3u4TS0g4w8DW+6+fnghvtCH7ldKXiz03UuoaIIntEfSBb7MhwQQanGdRrYj+lhIS9zA2voeJgji6YzuXwZVU+bCuyjQ9/0hlGaMi9muXXAWxfHq3dyvQ1YhxGynjAuYhv9nlKUP473gsjnFU3bbRwPAOVxUP05042dVjlDt36H/JOvUIAr6uOcw0UZ91dLiOTAWvsZAXzRTGtqPQsvCxvzbr90WF+ZN8jeG1EN3k4uUZPVqr2bQZv0xZytsA2/YLcz6xIlqa3p02X0D118JG2szXpf8Kq5K1qb5NZ8O38VRXxYe1+anpiMI7rxxrFsfqndZ6LQVdWk72O0+UNX5XLf8=
   on:
     tags: true
     repo: huntzhan/ghgh
